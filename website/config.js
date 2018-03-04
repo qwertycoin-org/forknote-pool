@@ -4,7 +4,7 @@ var api_blockexplorer = "http://poolhost.com:8197";
 
 var poolHost = "poolhost.com";
 
-var irc = "irc.freenode.net/#poolhost";
+var irc = "irc.freenode.net/#qwertycoin";
 
 var email = "support@poolhost.com";
 

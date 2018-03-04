@@ -92,7 +92,7 @@ Usage
 
 #### Requirements
 * Coin daemon(s) (find the coin's repo and build latest version from source)
-* simplewallet (Bytecoin/Forknote v1.1.11).  Do NOT use Forknote 2.0.0, since it's in alpha
+* simplewallet (Qwertycoin v1.5.6 and newer)
 ```
 * [Node.js](http://nodejs.org/) v0.10+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
@@ -292,13 +292,13 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 29081
+    "port": 8197
 },
 
 /* Wallet daemon connection details. */
 "wallet": {
     "host": "127.0.0.1",
-    "port": 29082
+    "port": 8198
 },
 
 /* Redis connection into. */
@@ -420,11 +420,14 @@ Variable explanations:
 /* Must point to the API setup in your config.json file. */
 var api = "http://poolhost:8117";
 
+/* Must point to the Daemon setup in your config.json file */
+var api_blockexplorer = "http://poolhost.com:8197";
+
 /* Pool server host to instruct your miners to point to.  */
 var poolHost = "poolhost.com";
 
 /* IRC Server and room used for embedded KiwiIRC chat. */
-var irc = "irc.freenode.net/#forknote";
+var irc = "irc.freenode.net/#qwertycoin";
 
 /* Contact email address. */
 var email = "support@poolhost.com";
@@ -433,13 +436,13 @@ var email = "support@poolhost.com";
 var cryptonatorWidget = ["QWC-BTC", "QWC-USD", "QWC-EUR"];
 
 /* Download link to cryptonote-easy-miner for Windows users. */
-var easyminerDownload = "https://github.com/zone117x/cryptonote-easy-miner/releases/";
+var easyminerDownload = "https://qwertycoin.org/downloads/";
 
 /* Used for front-end block links. */
-var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
+var blockchainExplorer = "http://xplorer.qwertycoin.org/?hash={id}#blockchain_block";
 
 /* Used by front-end transaction links. */
-var transactionExplorer = "http://chainradar.com/{symbol}/transaction/{id}";
+var transactionExplorer = "http://xplorer.qwertycoin.org/?hash={id}#blockchain_transaction";
 
 /* Any custom CSS theme for pool frontend */
 var themeCss = "themes/default-theme.css";
