@@ -505,20 +505,26 @@ curl 127.0.0.1:18081/json_rpc -d '{"method":"getblockheaderbyheight","params":{"
 
 ### Configuring Blockchain Explorer
 
-You need the latest stable version of Forknote for the blockchain explorer - [forknote releases](https://github.com/forknote/forknote/releases)
+You need the latest stable version of Qwertycoin Daemon for the blockchain explorer - [Qwertycoin releases](https://github.com/qwertycoin-org/qwertycoin/releases)
 * Add the following code to the coin's config file:
 
 ```
 rpc-bind-ip=0.0.0.0
-enable-blockexplorer=1
+enable-blockchain-indexes
 enable-cors=*
+```
+
+or start the Daemon as follow:
+
+```
+./qwertycoind --restricted-rpc --enable-cors=*  --enable-blockchain-indexes --rpc-bind-ip=0.0.0.0 --rpc-bind-port=8197 --fee-address=QWC1L4aAh5i7cbB813RQpsKP6pHXT2ymrbQCwQnQ3DC4QiyuhBUZw8dhAaFp8wH1Do6J9Lmim6ePv1SYFYs97yNV2xvSbTGc7s
 ```
 
 * Launch forknoted with the corresponding config file
 * Change the following line in the pool's frontend config.json:
 
 ```
-var api_blockexplorer = "http://daemonhost.com:1118";
+var api_blockexplorer = "http://daemonhost.com:8197";
 ```
 
 
