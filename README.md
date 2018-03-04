@@ -84,6 +84,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 #### Pools Using This Software
 
+* https://qwertycoin.site/
 * http://democats.org
 * http://cryptonotepool.com/
 
@@ -274,8 +275,8 @@ Explanation for each field:
        the variable CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW */
     "depth": 60,
     "poolFee": 1.8, //1.8% pool fee (2% total fee total including donations)
-    "devDonation": 0.1, //0.1% donation to send to pool dev - only works with Monero
-    "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON and OneEvilCoin
+    "devDonation": 0.0, //0.1% donation to send to pool dev - only works with Monero
+    "coreDevDonation": 0.1 //0.1% donation to send to core devs - works with Qwertycoin, Bytecoin, Monero, Dashcoin, QuarazCoin, Fantoncoin, AEON and OneEvilCoin
 },
 
 /* AJAX API used for front-end website. */
