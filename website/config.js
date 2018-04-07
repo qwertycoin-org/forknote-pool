@@ -12,9 +12,9 @@ var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
 var easyminerDownload = "https://qwertycoin.org/downloads/";
 
-var blockchainExplorer = "http://xplorer.qwertycoin.org/?hash={id}#blockchain_block";
+var blockchainExplorer = "http://explorer.qwertycoin.org/?hash={id}#blockchain_block";
 
-var transactionExplorer = "http://xplorer.qwertycoin.org/?hash={id}#blockchain_transaction";
+var transactionExplorer = "http://explorer.qwertycoin.org/?hash={id}#blockchain_transaction";
 
 var themeCss = "themes/default-theme.css";
 
