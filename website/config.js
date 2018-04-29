@@ -19,7 +19,7 @@ var transactionExplorer = "http://explorer.qwertycoin.org/?hash={id}#blockchain_
 var themeCss = "themes/default-theme.css";
 
 var networkStat = {
-    "qwc": [
+    "QWC": [
         ["qwertycoin.site", "https://qwertycoin.site:8119"],
         ["pool.ahka.net/qwertycoin", "http://qwc.pool.ahka.net:8116"],
         ["qwerty.poolminer.work", "http://qwerty.poolminer.work:8117"],
