@@ -1,5 +1,5 @@
 {
-    "coin": "qwertycoin",
+    "coin": "Qwertycoin",
     "symbol": "QWC",
     "coinUnits": 100000000,
     "coinDifficultyTarget": 120,
@@ -85,10 +85,10 @@
         "enabled": true,
         "interval": 120,
         "maxAddresses": 50,
-        "mixin": 1,
+        "mixin": 2,
         "transferFee": 5000000000,
         "minPayment": 1000000000000,
-        "maxTransactionAmount": 50000000000000,
+        "maxTransactionAmount": 100000000000000,
         "denomination": 10000000
     },
 
