@@ -30,22 +30,22 @@
             },
             {
                 "port": 5555,
-                "difficulty": 5000,
+                "difficulty": 10000,
                 "desc": "Mid hardware"
             },
             {
                 "port": 6666,
-                "difficulty": 10000,
+                "difficulty": 20000,
                 "desc": "High end hardware"
             },
             {
                 "port": 7777,
-                "difficulty": 25000,
+                "difficulty": 100000,
                 "desc": "High end rig"
             },
             {
                 "port": 8888,
-                "difficulty": 650000,
+                "difficulty": 1000000,
                 "desc": "Nicehash"
             }
         ],
@@ -84,7 +84,7 @@
     "payments": {
         "enabled": true,
         "interval": 120,
-        "maxAddresses": 50,
+        "maxAddresses": 20,
         "mixin": 2,
         "transferFee": 5000000000,
         "minPayment": 1000000000000,
@@ -109,6 +109,11 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
+        "ssl": false,
+        "sslport": 8119,
+        "sslcert": "~cert.pem",
+        "sslkey": "~privkey.pem",
+        "sslca": "~chain.pem",
         "password": "your_password"
     },
 

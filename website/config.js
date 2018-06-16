@@ -1,4 +1,5 @@
 var api = "http://poolhost.com:8117";
+//var api = "https://poolhost.com:8119"; //SSL
 
 var api_blockexplorer = "http://poolhost.com:8197";
 
@@ -12,9 +13,9 @@ var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
 var easyminerDownload = "https://qwertycoin.org/downloads/";
 
-var blockchainExplorer = "http://explorer.qwertycoin.org/?hash={id}#blockchain_block";
+var blockchainExplorer = "https://explorer.qwertycoin.org/?hash={id}#blockchain_block";
 
-var transactionExplorer = "http://explorer.qwertycoin.org/?hash={id}#blockchain_transaction";
+var transactionExplorer = "https://explorer.qwertycoin.org/?hash={id}#blockchain_transaction";
 
 var themeCss = "themes/default-theme.css";
 
